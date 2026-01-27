@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:aqua;
+    color:blue;
+}
+.navbar li{
+    list-style:none;
+}
+.navbar li:hover{
+  color:blue;
+}
