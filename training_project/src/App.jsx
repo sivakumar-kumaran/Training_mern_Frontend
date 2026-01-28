@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React,{createContext} from 'react'
 import Profile from './componets/Profile'
 import State from './hooks/State'
 import Parents from './componets/Parents'
@@ -11,6 +11,8 @@ import Contact from './pages/Contact'
 import Navbar from './componets/Navbar'
 import Product from './pages/Product'
 import ProductDetails from './pages/ProductDetails'
+
+export const userContext=createContext()
 const App = () => {
   return (
     <>

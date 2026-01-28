@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 const Form = () => {
 const [form,setForm]=useState({
     name:"",
@@ -17,6 +17,7 @@ const handleSubmit=(e)=>{
     e.preventDefault()
     console.log(form)
 }
+useEffect(()=>{console.log("Form submitted..!")},[form])
   return (
     <div><form onSubmit={handleSubmit}>
         <label htmlFor="name">Name: </label><input type="text" name="name" value={form.name} onChange={handleChanges}/><br/>

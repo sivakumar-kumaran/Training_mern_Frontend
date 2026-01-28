@@ -1,8 +1,9 @@
-import { useState } from 'react' 
+import { useState,useEffect } from 'react' 
 const State = () => {
     const[intial,setIntial]=useState(0);
     const [like,setLike]=useState(0);
     const [dislike,setDisLike]=useState(0);
+    useEffect(()=>{console.log("useEffect")},[like,dislike,intial])
     return (
     <div>
     <h1>{like}    {dislike}</h1>
